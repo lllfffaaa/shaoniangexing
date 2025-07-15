@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>少年歌行</title>
+<link href="css/index.css" rel="stylesheet">
+
+<style>
+	body {
+		background-image: url("images/sngx/bjt.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+</style>
+</head>
+
+<body>
+<div class="box">
+	<!--头部区域-->
+	<div class="topbox">
+		<div class="top">
+			<a href="index.html"><img src="images/sngx/logo.jpg" class="top-logo"></a>
+			<div class="t-sousuo">
+				<div class="sousuok">
+					<input type="text" placeholder="萧瑟" class="t-txt">
+					<input type="button" value="搜&nbsp;索" class="t-btn">
+				</div>
+				<span class="t-gjc">关键词：<span style="color: #32bdcf;">萧瑟</span>&nbsp; 雷无桀
+				&nbsp; 无心&nbsp; 唐莲&nbsp; 司空千落&nbsp; 天女蕊&nbsp; 月姬</span>
+			</div> 
+	</div>
+	</div>
+	
+	<!--导航区域-->
+	<div class="navbox">
+		<nav class="nav">
+			<ul>
+				<li ><a href="index.html" >首页</a></li>
+				<li class="navhover"><a href="rwjs.html">人物介绍</a></li>
+				<li><a href="jqjs.html">剧情内容</a></li>
+				<li><a href="sjsd.html">世界设定</a></li>
+				<li><a href="lxwm.html">联系我们</a></li>
+			</ul>
+			<script>
+				// 获取导航条元素  
+				const nav = document.querySelector('.nav');  
+				
+				// 获取导航项列表  
+				const navItems = document.querySelectorAll('.nav>ul>li');  
+					
+				// 添加鼠标悬停事件监听器  
+				navItems.forEach((item) => {  
+					item.addEventListener('mouseover', () => {  
+					// 移除其他导航项的hover样式  
+					navItems.forEach((otherItem) => {  
+						otherItem.classList.remove('navhover');  
+					});  
+					// 添加hover样式到当前导航项  
+					item.classList.add('navhover');  
+					});  
+				});
+			</script>
+		</nav>
+	</div>
+    <div class="wushuang">
+        <img src="images/sngx/lfs.jpeg" class="">
+        <img src="images/sngx/lfs.png" class="">
+        <img src="images/sngx/lfs2.webp.jpg" class="">
+        <img src="images/sngx/lfs3.webp.jpg" class="">
+
+    </div>
+
+    <div class="footbox">
+    	<div class="foot">
+			<!-- <div class="huiding"><a href="#">
+				<i class="fa fa-arrow-up" aria-hidden="true"></i>
+		   </a></div> -->
+			<ul>
+				<li><a href="lxwm.html">联系我们</a></li>
+				<li><a href="jqjs.html">剧情内容</a></li>
+				<li><a href="sjsd.html">世界设定</a></li>
+				<select class="f-xl">
+					<option>网页作者</option>
+					<option>软工2202</option>
+					<option>32203062</option>
+					<option>黎婉莹</option>
+				</select>
+			</ul>
+			<p class="f-sj">你想象中的江湖是怎么样的呢？<br><span>少年美酒、鲜衣怒马、花前月下、对酒高歌</span></p>
+			<p class="f-small"></p>
+			
+       		<img src="images/sngx/l.png" style="position:absolute;bottom:10px;right:30px; ">
+        </div>
+    </div>
+	
+</div>
+</body>
+</html>
+

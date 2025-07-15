@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>少年歌行</title>
+<link href="css/index.css" rel="stylesheet">
+<script src="index.js"></script>
+<style>
+	body {
+		background-image: url("images/sngx/bjt.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+</style>
+</head>
+
+<body>
+<div class="box">
+	<!--头部区域-->
+	<div class="topbox">
+		<div class="top">
+			<a href="index.html"><img src="images/sngx/logo.jpg" class="top-logo"></a>
+			<div class="t-sousuo">
+				<div class="sousuok">
+					<input type="text" placeholder="萧瑟" class="t-txt">
+					<input type="button" value="搜&nbsp;索" class="t-btn">
+				</div>
+				<span class="t-gjc">关键词：<span style="color: #32bdcf;">萧瑟</span>&nbsp; 雷无桀
+				&nbsp; 无心&nbsp; 唐莲&nbsp; 司空千落&nbsp; 天女蕊&nbsp; 月姬</span>
+				
+			</div> 
+	</div>
+	</div>
+	
+	<!--导航区域-->
+	<div class="navbox">
+		<nav class="nav">
+			<ul>
+				<li class="navhover"><a href="index.html" >首页</a></li>
+				<li><a href="rwjs.html">人物介绍</a></li>
+				<li><a href="jqjs.html">剧情内容</a></li>
+				<li><a href="sjsd.html">世界设定</a></li>
+				<li><a href="lxwm.html">联系我们</a></li>
+			</ul>
+			<script>
+				// 获取导航条元素  
+				const nav = document.querySelector('.nav');  
+				
+				// 获取导航项列表  
+				const navItems = document.querySelectorAll('.nav>ul>li');  
+					
+				// 添加鼠标悬停事件监听器  
+				navItems.forEach((item) => {  
+					item.addEventListener('mouseover', () => {  
+					// 移除其他导航项的hover样式  
+					navItems.forEach((otherItem) => {  
+						otherItem.classList.remove('navhover');  
+					});  
+					// 添加hover样式到当前导航项  
+					item.classList.add('navhover');  
+					});  
+				});
+			</script>
+		</nav>
+	</div>
+	<!--图区域-->
+	<div class="bannerbox">
+		<div class="banner">
+			<!--图片区域-->
+			<ul class="ban-img" id="carousel">
+			<li><img src="images/sngx/banner1.jpg"></li>
+			<li><img src="images/sngx/banner2.jpg"></li>
+			<li><img src="images/sngx/banner4.jpg"></li>
+			<li><img src="images/sngx/banner5.jpg"></li>
+			<li><img src="images/sngx/banner6.jpg"></li>
+			<li><img src="images/sngx/banner7.jpg"></li>
+			</ul>
+			<!--小圆圈-->
+			<ul class="ban-yqbox">
+				<li class="on"></li>
+				<li></li>   
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<script>
+						// 获取轮播图元素和圆点元素  
+			var carousel = document.getElementById('carousel');  
+			var dots = document.getElementsByClassName('ban-yqbox')[0].getElementsByTagName('li');  
+			var currentIndex = 0; // 当前显示的图片索引  
+			var totalImages = carousel.getElementsByTagName('img').length; // 总图片数  
+			// 设置圆点样式  
+			for (var i = 0; i < totalImages; i++) {  
+				dots[i].style.background = 'none';  
+			}  
+			dots[currentIndex].style.background = 'blue'; // 当前圆点高亮显示  
+			// 轮播图切换函数  
+			function changeImage() {  
+				// 隐藏当前图片和取消当前圆点高亮显示  
+				carousel.getElementsByTagName('img')[currentIndex].style.display = 'none';  
+				dots[currentIndex].style.background = 'none';  
+				// 更新当前图片索引和圆点高亮索引  
+				currentIndex++;  
+				if (currentIndex >= totalImages) {  
+				currentIndex = 0;  
+				}  
+				// 显示下一张图片和设置对应圆点高亮显示  
+				carousel.getElementsByTagName('img')[currentIndex].style.display = 'block';  
+				dots[currentIndex].style.background = 'blue';  
+			}  
+			// 设置定时器，每3秒切换一次图片和圆点高亮显示  
+			setInterval(changeImage, 1500); // 每1.5秒更换图片和圆点高亮显示  
+		</script>
+	</div>
+	<!-- 主角介绍 -->
+	<div class="newbox">
+		<div class="new">
+			<div id="datetime1">datetime</div>
+			<script>
+				function showTime() {
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1; 
+    var day = date.getDate();
+    var week; 
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    var date = new Date();  
+    var week = date.getDay();  
+    switch(date.getDay()) {  
+        case 0:  
+            week ="日";  
+            break;  
+        case 1:  
+            week ="一";  
+            break;  
+        case 2:  
+            week ="二";  
+            break;  
+        case 3:  
+            week ="三";  
+            break;  
+        case 4:  
+            week ="四";  
+            break;  
+        case 5:  
+            week ="五";  
+            break;  
+        case 6:  
+            week ="六";  
+            break;  
+    }
+    // 确保每个部分都有两位数字  
+    month = (month < 10 ? "0" : "") + month;
+    day = (day < 10 ? "0" : "") + day;
+    hours = (hours < 10 ? "0" : "") + hours;
+    minutes = (minutes < 10 ? "0" : "") + minutes;
+    seconds = (seconds < 10 ? "0" : "") + seconds;
+
+    var dateTimeString = year + "年" + month + "月" + day + "日 " +"星期"+ week +" "+ hours + ":" + minutes + ":" + seconds;
+    document.getElementById("datetime1").textContent = dateTimeString;
+}
+
+// 初始显示时间  
+showTime();
+// 每秒更新一次时间  
+setInterval(showTime, 1000);
+
+			</script>
+			<h3 class="new-title">主要人物介绍</h3>
+			<!--第一-->
+			<div class="new-xw" style="border-right: 1px solid #666666;border-top: 1px solid #666666;">
+				<div class="new-rq new-rq1">
+					<p>北离</p>
+					<span></span>
+					<p>六皇子</p>
+				</div>
+				<div class="new-wz new-wz1">
+					<a><img src="images/sngx/xs.jpg" class=""></a>
+					<a><h4>萧瑟（萧楚河）</h4></a>
+					<p>
+						<b>师承姬若风、司空长风。因替琅王萧若风谋反案求情，被皇帝萧若瑾逐出天启，离开路上被怒剑仙颜战天打伤，又被藏于暗处的上代大监浊清毁掉隐脉，致其空有内力而无法使用，只剩一身轻功此后隐于山野，改名萧瑟，成为雪落山庄的老板。某日偶遇雷无桀，因其欠银五百两，和雷无桀踏上前往雪月城的路，从此重入江湖。与司空千落两情相悦。武器:无极棍、天斩剑。</b>
+					<a style="color: #3093d4;padding-left: 20px;"></a></p>
+				</div>
+			</div>
+			<!--第二-->
+			<div class="new-xw" style="border-top: 1px solid #666666">
+				<div class="new-rq new-rq2">
+					<p>雷门</p>
+					<span></span>
+					<p>弟子</p>
+				</div>
+				<div class="new-wz new-wz2">
+					<a><img src="images/sngx/lwj.jpg" class=""></a>
+					<a ><h4>雷无桀</h4></a>
+					<p>
+						<b>师从雷轰，擅使火药，故事之初一个人闯荡江湖，相继遇上了萧瑟、唐莲、无心等人。进入雪月城后与姐姐李寒衣相见，学习剑术，后进入剑心冢，习得剑心。身具七窍玲珑心，性格天真烂漫，同时也是个路痴。与叶若依两情相悦。天启四守护之青龙。武器:火药、杀怖剑、听雨剑、心剑。</b>
+					<a  style="color: #549CCB;padding-left: 20px;"></a></p>
+				</div>
+			</div>
+			<!--第三-->
+			<div class="new-xw" style="border-top: 1px solid #666666;border-right: 1px solid #666666;  border-bottom: 1px solid #666666">
+				<div class="new-rq new-rq1">
+					<p>枪仙</p>
+					<span></span>
+					<p>之女</p>
+				</div>
+				<div class="new-wz new-wz1">
+					<a><img src="images/sngx/skql.jpg" class="">
+					<a ><h4>司空千落</h4></a>
+					<p>
+						<b>继承枪仙年轻时的“银月枪”，称“银月枪，哭断肠”，性格直爽泼辣，敢爱敢恨。对萧瑟一见倾心，再见定情。“我以一枪入逍遥，助你重登天启乘龙位!”心甘情愿为萧瑟提枪赴死，用手中长枪为心爱之人披荆斩棘。天启四守护之朱雀。武器:银月枪。</b>
+					<a  style="color: #549CCB;padding-left: 20px;"></a></p>
+				</div>
+			</div>
+			<!--第四-->
+			<div class="new-xw" style="border-top: 1px solid #666666;border-bottom: 1px solid #666666">
+				<div class="new-rq new-rq2">
+					<p>天外天</p>
+					<span></span>
+					<p>宗主</p>
+				</div>
+				<div class="new-wz new-wz2">
+					<a><img src="images/sngx/wx.jpg" class="">
+					<a ><h4>无心(叶安世)</h4></a>
+					<p>
+						<b>五岁时因父亲进犯北离失败身死，被迫定下协议以十二年为期作为质子留在北离，忘忧大师收留无心于寒水寺，教之佛门功法。十二年期满，忘忧担忧无心之事，走火入魔而身死,无心藏于忘忧大师的黄金棺材中，途中白发仙想带他回去却遭到无心抵抗，后经历一番波折后终随其返回天外天，成为新一任天外天宗主。</b>
+					<a style="color: #549CCB;padding-left: 20px;"></a></p>
+				</div>
+			</div>
+			<!---->
+		</div>
+		
+	</div>
+		<div class="logobox">
+    	<h3 class="lg-title">其余角色</h3>
+		<div class="logob">
+			<a href=""><img src="images/sngx/1.jpg"></a>
+            <a href=""><img src="images/sngx/2.jpg"></a>
+            <a href=""><img src="images/sngx/3.jpg"></a>
+            <a href=""><img src="images/sngx/4.jpg"></a>
+            <a href=""><img src="images/sngx/5.jpg"></a>
+            <a href=""><img src="images/sngx/6.jpg"></a>
+			<a href=""><img src="images/sngx/7.jpg"></a>
+			<a href=""><img src="images/sngx/8.jpg"></a>
+			<a href=""><img src="images/sngx/9.jpg"></a>
+			<a href=""><img src="images/sngx/10.jpg"></a>
+			<a href=""><img src="images/sngx/11.jpg"></a>
+			<a href=""><img src="images/sngx/12.jpg"></a>
+		</div>
+	</div>
+	
+	<!--页脚区域-->
+	<div class="footbox">
+    	<div class="foot">
+
+			<ul>
+				<li><a href="lxwm.html">联系我们</a></li>
+				<li><a href="jqjs.html">剧情内容</a></li>
+				<li><a href="sjsd.html">世界设定</a></li>
+				<select class="f-xl">
+					<option>网页作者</option>
+					<option>软工2202</option>
+					<option>32203062</option>
+					<option>黎婉莹</option>
+				</select>
+			</ul>
+			<p class="f-sj">你想象中的江湖是怎么样的呢？<br><span>少年美酒、鲜衣怒马、花前月下、对酒高歌</span></p>
+			<p class="f-small"></p>
+			
+       		<img src="images/sngx/l.png" style="position:absolute;bottom:10px;right:30px; ">
+        </div>
+    </div>
+	
+</div>
+</body>
+</html>

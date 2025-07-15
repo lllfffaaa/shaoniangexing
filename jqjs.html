@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>少年歌行</title>
+<link href="css/index.css" type="text/css" rel="stylesheet">
+<style>
+	body {
+		background-image: url("images/sngx/bjt.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+</style>
+</head>
+
+<body>
+<div class="box">
+	<!--头部区域-->
+	<div class="topbox">
+		<div class="top">
+			<a href="index.html"><img src="images/sngx/logo.jpg" class="top-logo"></a>
+			<div class="t-sousuo">
+				<div class="sousuok">
+					<input type="text" placeholder="萧瑟" class="t-txt">
+					<input type="button" value="搜&nbsp;索" class="t-btn">
+				</div>
+				<span class="t-gjc">关键词：<span style="color: #32bdcf;">萧瑟</span>&nbsp; 雷无桀
+				&nbsp; 无心&nbsp; 唐莲&nbsp; 司空千落&nbsp; 天女蕊&nbsp; 月姬</span>
+			</div> 
+
+	</div>
+	</div>
+	
+	<!--导航区域-->
+	<div class="navbox">
+		<nav class="nav">
+			<ul>
+				<li><a href="index.html" >首页</a></li>
+				<li><a href="rwjs.html">人物介绍</a></li>
+				<li class="navhover"><a href="jqjs.html">剧情内容</a></li>
+				<li><a href="sjsd.html">世界设定</a></li>
+				<li><a href="lxwm.html">联系我们</a></li>
+			</ul>
+			<script>
+				// 获取导航条元素  
+				const nav = document.querySelector('.nav');  
+				
+				// 获取导航项列表  
+				const navItems = document.querySelectorAll('.nav>ul>li');  
+					
+				// 添加鼠标悬停事件监听器  
+				navItems.forEach((item) => {  
+					item.addEventListener('mouseover', () => {  
+					// 移除其他导航项的hover样式  
+					navItems.forEach((otherItem) => {  
+						otherItem.classList.remove('navhover');  
+					});  
+					// 添加hover样式到当前导航项  
+					item.classList.add('navhover');  
+					});  
+				});
+			</script>
+		</nav>
+	</div>
+	<!--内容区域-->
+	<div  class="mianbao">
+		<ul>
+			<li>剧情内容</li>
+		</ul>
+	</div>
+	<div class="conbox">
+			<!--第一组-->
+	<div class="list1">
+		<img src="images/sngx/jq.jpg" class="img1">
+		<div class="font">
+			<h4>少年歌行</h4>
+			<p>这本小说讲述了初入江湖的雷门少年雷无桀和隐世皇子萧瑟相识，并一起同闯江湖、卷入朝堂纷争，在阴谋诡谲中相携相助，最后名扬天下的故事。 <br>四个拥有离奇身世却又英气潇洒的少年侠客，一路相伴一路纠葛的江湖故事。 <br>一条条无形的线在江湖的大网中交织，解不开的情缘，逃不开的命运，起承转合间四少年不断成长。</p>
+		</div>
+	</div>	<!--第一组-->
+	<div class="list2">
+		<img src="images/sngx/jq0.jpg" class="img2">
+		<div class="font2">
+			<h4>第一卷黄金棺材</h4>
+			<p>一个神秘的黄金棺材，一场事关十二年前江湖隐秘的纷争。</p>
+			<P>初入江湖的雷门弟子，破败客栈的抠门老板，还有风华绝代的妖娆僧人。</P>
+			<P>少年们在此相遇，故事就此展开……</P>
+		</div>
+	</div>
+		<!--第二组-->
+		<div class="list1">
+			<img src="images/sngx/jq1.jpg" class="img1">
+			<div class="font">
+				<h4>第二卷风花雪月</h4>
+				<p>上关风，下关花，苍山雪，洱海月。</p>
+				<p>历经千辛万苦，萧瑟和雷无桀终于走到了雪月城的门下。</p>
+				<p>只是一座登天阁拦在那里，登天阁外，仍是凡城，过了登天阁，方能见雪月。</p>
+				<p>于是，他们见到了。</p>
+				<p>剑仙一剑，可渝千古。</p>
+			</div>
+		</div>
+		<!--第三组-->
+		<div class="list2">
+			<img src="images/sngx/jq2.jpg" class="img2">
+			<div class="font2">
+				<h4>第三卷海外仙山</h4>
+				<p>只见那人一身白衣，长风飘扬，清风含笑，仿若仙人临世。</p>
+				<p>“仙人说太上忘情，说的是忘情而不是无情。你没有忘掉心中的执念，却让自己变得无情。我对你很失望。”那人说出严厉的话，却依然笑如春风。</p>
+				<p>“你……是谁？”莫衣犹豫地说道。</p>
+				<p>“我是莫衣。”那白衣之人放开了双手，长袖纷飞，起绝世而舞。</p>
+			</div>
+		</div>
+		<!--第四组-->
+		<div class="list1">
+			<img src="images/sngx/jq3.jpg" class="img1">
+			<div class="font">
+				<h4>第四卷血染天启</h4>
+				<p>萧瑟终于回来了。</p>
+				<p>回到了他的天启城。</p>
+				<p>他想孤身一人而回，所以不告而别。</p>
+				<p>可当他走到天启城下的时候，身后已有千军万马!</p>
+			</div>
+		</div>
+		<!--第五组-->
+		<div class="list2">
+			<img src="images/sngx/jq4.jpg" class="img2">
+			<div class="font2">
+				<h4>少年白马醉春风</h4>
+				<p>长街有煞，喧闹嘈杂。</p>
+				<p>手持砍刀的屠夫手起刀落，骨上挑花，卖花鞋的老太针挑烛火，百尺无活，还有一个卖油郎，袖里藏着十八剑，总望着对面的包子铺，那手一撕能换九张脸的小西施。长街尽头还有一座东归酒肆，里面有个酿酒的小少年，那少年……就真的只是一个酿酒的。</p>
+				<p>他有酒十二盏，却无人来喝，店里永远只坐着一个醉醺醺的白衣男，抱着长枪晃悠悠，他说想要买匹马提上酒，纵马扬鞭，一醉春风。</p>
+			</div>
+		</div>
+		<!--第六组-->
+		<div class="list1">
+			<img src="images/sngx/jq5.jpg" class="img1">
+			<div class="font">
+				<h4>暗河传</h4>
+				<p>暗河，在朝能杀皇亲国戚，在野能灭豪门大派，是令所有江湖人都畏惧的第一杀手组织。但暗河首领大家长日渐老迈，对于整个暗河的掌控力在逐渐丧失，在一次杀死唐门唐二老爷的任务中，大家长受了重伤，暗河中的几位家主纷纷派出杀手，妄图杀死大家长，而大家长则寻找医师来延续生命，这场关乎生死和杀手组织的未来的计时比赛开始了。命运使然，两个从死人堆里爬出来，惺惺相惜的年轻人站在了对立面...</p>
+
+			</div>
+		</div>	
+		
+	</div>
+	
+	<!--页脚区域-->
+	<div class="footbox">
+    	<div class="foot">
+			<!-- <div class="huiding"><a href="#">
+				<i class="fa fa-arrow-up" aria-hidden="true"></i>
+		   </a></div> -->
+			<ul>
+				<li><a href="lxwm.html">联系我们</a></li>
+				<li><a href="jqjs.html">剧情内容</a></li>
+				<li><a href="sjsd.html">世界设定</a></li>
+				<select class="f-xl">
+					<option>网页作者</option>
+					<option>软工2202</option>
+					<option>32203062</option>
+					<option>黎婉莹</option>
+				</select>
+			</ul>
+			<p class="f-sj">你想象中的江湖是怎么样的呢？<br><span>少年美酒、鲜衣怒马、花前月下、对酒高歌</span></p>
+			<p class="f-small"></p>
+			
+       		<img src="images/sngx/l.png" style="position:absolute;bottom:10px;right:30px; ">
+        </div>
+    </div>
+	
+</div>
+</body>
+</html>

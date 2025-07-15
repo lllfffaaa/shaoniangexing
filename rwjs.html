@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>少年歌行</title>
+<link href="css/index.css" rel="stylesheet">
+<style>
+	body {
+		background-image: url("images/sngx/bjt.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+</style>
+</head>
+
+<body>
+<div class="box">
+	<!--头部区域-->
+	<div class="topbox">
+		
+		<div class="top">
+			<a href="index.html"><img src="images/sngx/logo.jpg" class="top-logo"></a>
+			<div class="t-sousuo">
+				<div class="sousuok">
+					<input type="text" placeholder="萧瑟" class="t-txt">
+					<input type="button" value="搜&nbsp;索" class="t-btn">
+				</div>
+				<span class="t-gjc">关键词：<span style="color: #32bdcf;">萧瑟</span>&nbsp; 雷无桀
+				&nbsp; 无心&nbsp; 唐莲&nbsp; 司空千落&nbsp; 天女蕊&nbsp; 月姬</span>
+			</div> 
+		</div>
+	</div>
+	
+	<!--导航区域-->
+	<div class="navbox">
+		<nav class="nav">
+			<ul>
+				<li><a href="index.html" >首页</a></li>
+				<li class="navhover"><a href="rwjs.html">人物介绍</a></li>
+				<li><a href="jqjs.html">剧情内容</a></li>
+				<li><a href="sjsd.html">世界设定</a></li>
+				<li><a href="lxwm.html">联系我们</a></li>
+			</ul>
+			<script>
+				// 获取导航条元素  
+				const nav = document.querySelector('.nav');  
+				
+				// 获取导航项列表  
+				const navItems = document.querySelectorAll('.nav>ul>li');  
+					
+				// 添加鼠标悬停事件监听器  
+				navItems.forEach((item) => {  
+					item.addEventListener('mouseover', () => {  
+					// 移除其他导航项的hover样式  
+					navItems.forEach((otherItem) => {  
+						otherItem.classList.remove('navhover');  
+					});  
+					// 添加hover样式到当前导航项  
+					item.classList.add('navhover');  
+					});  
+				});
+			</script>
+		</nav>
+	</div>
+	
+	<div class="banbox">
+		<div class="ban">
+		<ul class="b-list">
+			<!-- 唐莲 -->
+			<li><a href="主角团.html"><img src="images/sngx/tlzt.jpg"></a>
+					<div class="b-listjs">
+					<a href="主角团.html">
+					<p>点击查看角色详情介绍
+					</p>
+					</a>
+					</div>
+			</li>
+			<!-- 司空千落 -->
+			<li><a href="主角团.html"><img src="images/sngx/skqlzt.jpg" ></a>
+					<div class="b-listjs">
+					<a href="主角团.html">
+					<p>点击查看角色详情介绍
+					</p>
+					</a>
+					</div>
+			</li>
+			<!-- 萧瑟 -->
+			<li><a href="主角团.html"><img src="images/sngx/xszt.jpg"></a>
+					<div class="b-listjs">
+					<a href="主角团.html">
+					<p>点击查看角色详情介绍
+					</p>
+					</a>
+					</div>
+			</li>
+			<!-- 无心 -->
+			<li><a href="主角团.html"><img src="images/sngx/wxzt.jpg" ></a>
+					<div class="b-listjs">
+					<a href="主角团.html">
+					<p>点击查看角色详情介绍
+					</p>
+					</a>
+					</div>
+			</li>
+			<!-- 雷无桀 -->
+			<li><a href="主角团.html"><img src="images/sngx/lwjzt.jpg"></a>
+					<div class="b-listjs">
+					<a href="主角团.html">
+					<p>点击查看角色详情介绍
+					</p>
+					</a>
+					</div>
+			</li>
+		</ul>
+		</div>
+	</div>
+	
+	<!--内容区域-->
+	<div class="conbox1">
+		<ul class="c-nav">
+			<li><a href="雪月城.html">雪月城</a>
+				<ul class="c-nav-hover">
+					<li><a href="雪月城.html">百里东君</a></li>
+					<li><a href="雪月城.html">李寒衣</a></li>
+					<li><a href="雪月城.html">司空长风</a></li>
+					<li><a href="雪月城.html">司空千落</a></li>
+					<li><a href="雪月城.html">尹落霞</a></li>
+					<li><a href="雪月城.html">洛明轩</a></li>
+					<li><a href="雪月城.html">唐莲</a></li>
+				</ul>
+			</li>
+			<li><a href="天启城.html">天启城</a>
+				<ul class="c-nav-hover">
+					<li><a href="天启城.html">萧楚河</a></li>
+					<li><a href="天启城.html">雪姬</a></li>
+					<li><a href="天启城.html">齐天尘</a></li>
+					<li><a href="天启城.html">五大监</a></li>
+					<li><a href="天启城.html">颜战天</a></li>
+				</ul>
+			</li>
+			<li><a href="暗河.html">暗河</a>
+				<ul class="c-nav-hover">
+					<li><a href="暗河.html">苏昌河</a></li>
+					<li><a href="暗河.html">苏暮雨</a></li>
+					<li><a href="暗河.html">苏昌离</a></li>
+					<li><a href="暗河.html">慕婴</a></li>
+					<li><a href="暗河.html">慕雨墨</a></li>
+					<li><a href="暗河.html">谢七刀</a></li>
+				</ul>
+			</li>
+			<li><a href="天外天.html">天外天</a>
+				<ul class="c-nav-hover">
+					<li><a href="天外天.html">无心</a></li>
+					<li><a href="天外天.html">紫衣侯</a></li>
+					<li><a href="天外天.html">白发仙</a></li>
+					<li><a href="天外天.html">玥瑶</a></li>
+				</ul>
+			</li>
+			<li><a href="北离八公子.html">八公子</a>
+				<ul class="c-nav-hover">
+					<li><a href="北离八公子.html">谢宣</a></li>
+					<li><a href="北离八公子.html">墨晓黑</a></li>
+					<li><a href="北离八公子.html">柳月</a></li>
+					<li><a href="北离八公子.html">顾剑门</a></li>
+					<li><a href="北离八公子.html">雷梦杀</a></li>
+					<li><a href="北离八公子.html">洛轩</a></li>
+					<li><a href="北离八公子.html">萧若风</a></li>
+					<li><a href="北离八公子.html">顾剑门</a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="cp-list">
+			<li><a href="无双.html">
+				<img src="images/sngx/ws1.jpg" width="230"></a>
+				<h4><a href="无双.html">无双</a></h4>
+ 
+				<a class="jrgwc">看高清图</a>
+				<div class="list-h">
+					<p>无双城最年轻的城主<br>
+						看似天真幼稚<br>
+						实则心思细腻<br>
+						与雷无桀<br>
+						惺惺相惜<br>
+					</p>
+					<p>武器：无双剑匣</p>
+				</div>
+			</li>
+			<li><a href="叶若依.html">
+				<img src="images/sngx/yry1.jpg" width="230"></a>
+				<h4><a href="叶若依.html">叶若依</a></h4>
+ 
+				<a class="jrgwc">看高清图</a>
+				<div class="list-h">
+					<p>大将军叶啸鹰之女<br>
+						先天心脉不全<br>
+						聪慧过人<br>
+						与萧瑟<br>
+						幼年相识<br>
+					</p>
+					<p>若衣剑舞</p>
+				</div>
+			</li>
+			<li><a href="李寒衣.html">
+				<img src="images/sngx/lhy11.jpg" width="230"></a>
+				<h4><a href="s李寒衣.html">李寒衣</a></h4>
+ 
+				<a class="jrgwc">看高清图</a>
+				<div class="list-h">
+					<p>雪月剑仙<br>
+						雪月城二城主<br>
+						剑术天赋极高<br>
+						实力强大<br>
+						逍遥天境最顶峰<br>
+					</p>
+					<p>武器：铁马冰河、桃花</p>
+				</div>
+			</li>
+			<li><a href="赵玉真.html">
+				<img src="images/sngx/zyz11.jpg" width="230"></a>
+				<h4><a href="赵玉真.html">赵玉真</a></h4>
+ 
+				<a class="jrgwc">看高清图</a>
+				<div class="list-h">
+					<p>道剑仙<br>
+						青城山掌教<br>
+						李寒衣的恋人<br>
+						剑术道法第一<br>
+					</p>
+					<p>武器：桃花、青霄</p>
+				</div>
+			</li>
+			<li><a href="李凡松.html">
+				<img src="images/sngx/lfs11.jpg" width="230"></a>
+				<h4><a href="李凡松.html">李凡松</a></h4>
+ 
+				<a class="jrgwc">看高清图</a>
+				<div class="list-h">
+					<p>青城山弟子<br>
+						赵玉真的剑术传人<br>
+						后来拜谢宣为师<br>
+					</p>
+					<p>武器：青霄</p>
+				</div>
+			</li>
+			<li><a href="华锦.html">
+				<img src="images/sngx/hj11.jpg" width="230"></a>
+				<h4><a href="华锦.html">华锦</a></h4>
+ 
+				<a class="jrgwc">看高清图</a>
+				<div class="list-h">
+					<p>药王谷弟子<br>
+						药王辛百草的徒弟<br>
+						司空长风的师妹<br>
+						完全继承了<br>
+						药王高超的医术<br>
+					</p>
+				</div>
+			</li>
+			<li><a href="天女蕊.html">
+				<img src="images/sngx/tnr11.jpg" width="230"></a>
+				<h4><a href="天女蕊.html">天女蕊</a></h4>
+ 
+				<a class="jrgwc">看高清图</a>
+				<div class="list-h">
+					<p>三顾城接头人<br>
+						美人庄庄主<br>
+						唐莲的红颜知己<br>
+						对唐莲的一片真心<br>
+					</p>
+				</div>
+			</li>
+			<li><a href="苏昌河.html">
+				<img src="images/sngx/sch11.jpg" width="230"></a>
+				<h4><a href="苏昌河.html">苏昌河</a></h4>
+ 
+				<a class="jrgwc">看高清图</a>
+				<div class="list-h">
+					<p>暗河大家长<br>
+						野心极大<br>
+						曾抵御魔教入侵<br>
+					</p>
+				</div>
+			</li>
+			<li><a href="苏暮雨.html">
+				<img src="images/sngx/smy11.jpg" width="230"></a>
+				<h4><a href="苏暮雨.html">苏暮雨</a></h4>
+ 
+				<a class="jrgwc">看高清图</a>
+				<div class="list-h">
+					<p>苏家家主<br>
+						暗河第一杀手<br>
+						人称执伞鬼<br>
+						四大魔头之一<br>
+					</p>
+				</div>
+			</li>
+			<li><a href="苏昌离.html">
+				<img src="images/sngx/scl11.jpg" width="230"></a>
+				<h4><a href="苏昌离.html">苏昌离</a></h4>
+ 
+				<a class="jrgwc">看高清图</a>
+				<div class="list-h">
+					<p>暗河杀手<br>
+						苏昌河亲弟弟<br>
+						擅长剑术<br>
+						比起杀手更像是一名剑客<br>
+						死于李素王之手<br>
+					</p>
+				</div>
+			</li>
+			<li><a href="瑾仙.html">
+				<img src="images/sngx/jx11.jpg" width="230"></a>
+				<h4><a href="瑾仙.html">瑾仙</a></h4>
+ 
+				<a class="jrgwc">看高清图</a>
+				<div class="list-h">
+					<p>天启五大监<br>
+						掌香大监<br>
+						左手慈悲，佛珠轻捻，魄灭魂飞<br>
+						右手杀生，一剑既出， 风雪枯萎<br>
+						实力非同凡俗<br>
+					</p>
+				</div>
+			</li>
+			<li><a href="尹落霞.html">
+				<img src="images/sngx/ylx11.jpg" width="230"></a>
+				<h4><a href="尹落霞.html">尹落霞</a></h4>
+ 
+				<a class="jrgwc">看高清图</a>
+				<div class="list-h">
+					<p>雪月城四号人物<br>
+						喜好赌博的大美人<br>
+						赌王之女<br>
+						实力强大不凡<br>
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<!--页脚区域-->
+	<div class="footbox">
+    	<div class="foot">
+			<ul>
+				<li><a href="lxwm.html">联系我们</a></li>
+				<li><a href="jqjs.html">剧情内容</a></li>
+				<li><a href="sjsd.html">世界设定</a></li>
+				<select class="f-xl">
+					<option>网页作者</option>
+					<option>软工2202</option>
+					<option>32203062</option>
+					<option>黎婉莹</option>
+				</select>
+			</ul>
+			<p class="f-sj">你想象中的江湖是怎么样的呢？<br><span>少年美酒、鲜衣怒马、花前月下、对酒高歌</span></p>
+			<p class="f-small"></p>
+			
+       		<img src="images/sngx/l.png" style="position:absolute;bottom:10px;right:30px; ">
+        </div>
+    </div>
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>少年歌行</title>
+<link href="css/index.css" type="text/css" rel="stylesheet">
+<style>
+	body {
+		background-image: url("images/sngx/bjt.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+</style>
+</head>
+
+<body>
+<div class="box">
+	<!--头部区域-->
+	<div class="topbox">
+		<div class="top">
+			<a href="index.html"><img src="images/sngx/logo.jpg" class="top-logo"></a>
+			<div class="t-sousuo">
+				<div class="sousuok">
+					<input type="text" placeholder="萧瑟" class="t-txt">
+					<input type="button" value="搜&nbsp;索" class="t-btn">
+				</div>
+				<span class="t-gjc">关键词：<span style="color: #32bdcf;">萧瑟</span>&nbsp; 雷无桀
+				&nbsp; 无心&nbsp; 唐莲&nbsp; 司空千落&nbsp; 天女蕊&nbsp; 月姬</span>
+			</div> 
+	</div>
+	</div>
+	
+	<!--导航区域-->
+	<div class="navbox">
+		<nav class="nav">
+			<ul>
+				<li><a href="index.html" >首页</a></li>
+				<li><a href="rwjs.html">人物介绍</a></li>
+				<li><a href="jqjs.html">剧情内容</a></li>
+				<li class="navhover"><a href="sjsd.html">世界设定</a></li>
+				<li><a href="lxwm.html">联系我们</a></li>
+			</ul>
+			<script>
+				// 获取导航条元素  
+				const nav = document.querySelector('.nav');  
+				
+				// 获取导航项列表  
+				const navItems = document.querySelectorAll('.nav>ul>li');  
+					
+				// 添加鼠标悬停事件监听器  
+				navItems.forEach((item) => {  
+					item.addEventListener('mouseover', () => {  
+					// 移除其他导航项的hover样式  
+					navItems.forEach((otherItem) => {  
+						otherItem.classList.remove('navhover');  
+					});  
+					// 添加hover样式到当前导航项  
+					item.classList.add('navhover');  
+					});  
+				});
+			</script>
+		</nav>
+	</div>
+	<!--焦点图区域-->
+	<div class="banbox2">
+		<ul class="ban-img1" >
+			<li><img src="images/sngx/sjsd6.jpg" style="width: 1200px;"></li>
+			<li><img src="images/sngx/sjsd8.jpg" style="width: 1200px;"></li>
+			<li><img src="images/sngx/sjsd9.jpg" style="width: 1200px;"></li>
+		</ul>
+		<!-- <div class="ban-yq">
+			<a href="#" class="ban-yqa"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</div> -->
+		<script>  
+			var slider = document.getElementById("slider");  
+			var slides = slider.getElementsByTagName("li");  
+			var index = 0;  
+		  
+			// 设置自动切换的时间间隔，例如每1.5秒切换一次  
+			var slideInterval = setInterval(nextSlide, 1500);  
+		  
+			function nextSlide() {  
+				slides[index].className = "slide"; // 隐藏当前幻灯片  
+				index = (index + 1) % slides.length; // 计算下一张幻灯片的索引  
+				slides[index].className = "slide active"; // 显示下一张幻灯片并设置active类以显示它  
+			}  
+		</script>
+	</div>
+	<div class="shuax">
+
+		<div class="xlss">
+				<input type="text" placeholder="请输入关键字">
+				<input type="button" value="搜索">
+		</div>
+	</div>
+	
+
+	<div class="newsbox" id="newsbox">
+
+		<div class="new1">
+			<ul>
+				<li>
+					<a href=""><img src="images/sngx/sjsd1.jpg" ></a>
+					<p class="wen-bt">武功境界</p>
+					<div class="new1-hover">
+						<p>由百晓堂堂主姬若风所评，以一品境界划分天下武人。一品之下只算得武夫，一品之上才算高手。而一品又分四境。
+							<br><br>
+							第一境金刚凡境，练成之时，不取六尘万法，无坚不摧。<br><br>
+							第二境自在地境，心若自在，地上无敌。<br><br>
+							第三境逍遥天境，以天道为武力，一刀一剑有万物呼应。武功为这个境界的有白发仙、被废武功之前的萧瑟还有几位剑仙等。<br><br>
+							第四境神游玄境，只在传说之中，可静坐闭目，神思却畅游万里之外<br><br>截止到少歌结局，世间尚存且完整达到此境界的仅有三位：莫衣、百里东君、洛青阳。<br><br>
+					</p>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/sngx/sjsd2.jpg" ></a>
+					<p class="wen-bt">十大名剑</p>
+					<div class="new1-hover">
+						<p>由剑心冢列剑谱评定的天下名剑。
+							<br><br>
+							剑谱第一，天斩。天下第一剑，天道之剑，非天命之人不能持。常年供于钦天监，国师齐天尘守之，后成为萧瑟佩剑。
+							<br><br>
+							剑谱第二，大明朱雀。其剑为无双城镇城之宝，藏于无双剑匣之中，剑意锋锐，出剑必见血可返，其为无双城城主无双所配。<br><br>
+							剑谱第三，铁马冰河。其剑乃世间至寒之剑，原封于昆仑山巅，曾为绝世昆仑剑仙所配，后为雪月剑仙李寒衣所持。<br><br>
+							剑谱第四，心。唯一以单字为名的剑，剑可同灵，与剑主心意相同，剑意纯粹可断凡剑剑意，其剑为剑心冢历任传人佩剑，后传给年轻冢主雷无桀。<br><br>
+剑谱第五，破军。其剑钝而厚重，非天生神力不能舞，称王霸之剑，怒剑仙颜战天佩其剑。<br><br>
+剑谱第六，青霄。其剑乃青城山镇山之宝，历任掌门佩剑，含道家至理，曾传青城山掌教赵玉真，后传予李凡松。<br><br>
+剑谱第七，动千山。其剑剑气浩瀚无比，一剑起，动千山，起万潮，十大名剑中唯一当年铸剑师所铸之剑，现持有人为沐春风。<br><br>
+剑谱第八，昊阙。其剑可称人间正气第一剑，原为北离大都护琅琊王萧若风所佩之剑，萧若风死后佩剑藏于天启城天剑阁，有剑奴守之，后由萧凌尘取走。<br><br>
+剑谱第九，霜雪。剑乃雌雄双剑，秋之霜冬之雪，单剑平凡，可双剑合壁却有神威，现传人不知。<br><br>
+剑谱第十，无忧。其剑莹白如玉，剑身修颀秀丽，不似人间之剑，隐隐有飘然仙风，现传人不知。<br><br>
+					</p>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+		<div class="new1">
+			<ul>
+				<li>
+					<a href=""><img src="images/sngx/sjsd3.jpg" ></a>
+					<p class="wen-bt">金榜排名</p>
+					<div class="new1-hover">
+						<p>江湖风波静，金榜论武名。<br>
+						由百晓堂评定天下强者，共有三份榜单<br><br>分别为百兵榜、良玉榜、冠绝榜<br><br>武榜的更迭，有时候三年一次，有时候一年一次<br><br>倒不是看百晓堂堂主姬若风的心情<br><br>只是根据那前五个字——江湖风波静。<br><br>每次风波起的时候，总会有人死去，有人崛起，有人退出，所以风波一静，江湖就变了。<br>
+					</p>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/sngx/sjsd4.jpg" ></a>
+					<p class="wen-bt">金榜第一榜，名百兵榜</p>
+					<div class="new1-hover">
+						<p>说的是兵器，也是用兵器的人<br><br>百兵，枪为王，所以第一个名字就是枪仙<br><br>而后是北离的几位剑仙以及南诀的几位刀仙<br><br>百兵榜下面的那些名字就并没有上面那些名震天下，也没有谁再能冠上仙的名号<br><br>直到最后那个名字<br><br>酒仙，百里东君<br><br>兵器：拳头，以及所有。<br>
+					</p>
+					</div>
+				</li>
+			</ul>
+			
+		</div>
+		<div class="new1">
+			<ul>
+				<li>
+					<a href=""><img src="images/sngx/sjsd5.jpg" ></a>
+					<p class="wen-bt">金榜第二榜，名良玉榜</p>
+					<div class="new1-hover">
+						<p>只有各门各派的年轻弟子能够入榜，不过八个名额，十分之珍贵<br><br>并且若是生辰过了二十五，就没有机会再入榜了<br><br>所以是曾经每一个少年英雄们无比渴望的榜<br><br>当年的雷轰、雷云鹤、李寒衣、司空长风、百里东君都位列良玉榜。
+						</p>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/sngx/sjsd7.jpg" ></a>
+					<p class="wen-bt">金榜第三榜，名冠绝榜</p>
+					<div class="new1-hover">
+						<p>
+							这份榜单的意思，就是冠绝天下<br><br>冠绝榜一共分四甲，第四甲四人，三甲三人，二甲二人，首甲一人<br><br>能入这冠绝榜，便是真真正正的金榜前十了<br><br>海外仙人莫衣为冠绝榜封榜多年重现江湖后的首甲<br><br>酒仙百里东君和孤剑仙洛青阳紧随其后位列二甲<br><br>后来仙人闭世，百里不归<br><br>洛青阳得入首甲
+						</p>
+					</div>
+				</li>
+			</ul>
+			
+		</div>
+	
+	</div>
+	
+	<!--页脚区域-->
+	<div class="footbox">
+    	<div class="foot">
+			<ul>
+				<li><a href="lxwm.html">联系我们</a></li>
+				<li><a href="jqjs.html">剧情内容</a></li>
+				<li><a href="sjsd.html">世界设定</a></li>
+				<select class="f-xl">
+					<option>网页作者</option>
+					<option>软工2202</option>
+					<option>32203062</option>
+					<option>黎婉莹</option>
+				</select>
+			</ul>
+			<p class="f-sj">你想象中的江湖是怎么样的呢？<br><span>少年美酒、鲜衣怒马、花前月下、对酒高歌</span></p>
+			<p class="f-small"></p>
+			
+       		<img src="images/sngx/l.png" style="position:absolute;bottom:10px;right:30px; ">
+        </div>
+    </div>
+	
+</div>
+</body>
+</html>
